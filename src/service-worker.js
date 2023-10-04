@@ -70,3 +70,16 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+// service-worker.js
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      if (response) {
+        // 서비스 워커가 캐시된 리소스를 반환
+        return response;
+      }
+      // 캐시되지 않은 경우, 네트워크에서 다운로드
+      return fetch(event.request);
+    })
+  );
+});

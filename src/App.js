@@ -7,7 +7,7 @@ function App() {
       <Typography variant="h2">Hello, Material-UI</Typography>
       <TextField label="Name" />
       <Button variant="contained" color="primary">
-        Click me material
+        Hello
       </Button>
       <Button2>
         Click me bootstrap

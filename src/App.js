@@ -21,7 +21,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <Container>
-        <Typography variant="h3" style={{ flexGrow: 1, textAlign:'center', fontWeight:'bold' }}>
+        <Typography variant="h3" style={{ flexGrow: 1, textAlign:'center', fontWeight:'bold', marginTop:'20px' }}>
           공지사항
         </Typography>
       </Container>

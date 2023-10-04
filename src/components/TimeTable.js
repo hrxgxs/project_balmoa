@@ -16,8 +16,8 @@ const TimeTable = () => {
       };
     
       const handleReservation = () => {
-        // 예약을 처리하는 로직을 추가합니다.
-        // 이 예시에서는 선택한 시간과 예약자 정보를 reservationList에 추가합니다.
+        // 예약을 처리하는 로직을 추가
+        // 이 예시에서는 선택한 시간과 예약자 정보를 reservationList에 추가
         setReservationList([...reservationList, { time: selectedTime, user: '사용자 이름' }]);
         setOpen(false);
       };

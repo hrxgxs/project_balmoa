@@ -24,7 +24,9 @@ const TimeTable = () => {
     
   return (
     <div>
-      <Container style={{ marginTop: '20px' }}>
+      <Container style={{ marginTop: '20px'
+       //,filter: 'blur(10px)' 
+       }}>
         <Grid container spacing={2}>
           {/* 타임 테이블 생성 */}
           <Grid item xs={12}>
@@ -46,6 +48,27 @@ const TimeTable = () => {
         <DialogContent>
           <TextField
             label="사용자 이름"
+            fullWidth
+            margin="normal"
+            variant="outlined"
+            // onChange={(e) => setSelectedUser(e.target.value)}
+          />
+          <TextField
+            label="학번"
+            fullWidth
+            margin="normal"
+            variant="outlined"
+            // onChange={(e) => setSelectedUser(e.target.value)}
+          />
+          <TextField
+            label="과"
+            fullWidth
+            margin="normal"
+            variant="outlined"
+            // onChange={(e) => setSelectedUser(e.target.value)}
+          />
+          <TextField
+            label="전화번호"
             fullWidth
             margin="normal"
             variant="outlined"

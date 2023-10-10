@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Container } from '@mui/material';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import TimeTable from './components/TimeTable';
@@ -15,6 +16,9 @@ function App() {
           <Typography variant="h6" style={{ flexGrow: 1, textAlign:'center', fontWeight:'bold' }}>
             Balmoa
           </Typography>
+          <IconButton color = "inherit">
+            <CameraAltIcon/>
+          </IconButton>
           <IconButton color="inherit">
             <AccountCircleIcon />
           </IconButton>

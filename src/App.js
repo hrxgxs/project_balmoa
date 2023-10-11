@@ -26,7 +26,7 @@ function App() {
       </AppBar>
       <Container>
         <Typography variant="h3" style={{ flexGrow: 1, textAlign:'center', fontWeight:'bold', marginTop:'20px' }}>
-          공지사항 + 알림사항
+          공지사항 + 알림사항 + 확인 
         </Typography>
       </Container>
       <TimeTable/>

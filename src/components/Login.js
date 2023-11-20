@@ -7,7 +7,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box';
@@ -35,7 +34,6 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignIn() {
-
 const navigate = useNavigate();
 const [emailError, setEmailError] = useState("");
 
@@ -48,7 +46,7 @@ const [emailError, setEmailError] = useState("");
     if (!emailRegex.test(email)) 
     setEmailError("올바른 이메일 형식이 아닙니다.")
     else setEmailError("")
-    await axios.post("http:/localhost:3000" + {email : email, password : password})
+    await axios.post("http:/localhost:3000" + {email : email})
                 .then((response) => {
                     console.log("email" + response.data.email);
                     console.log("password" + response.data.password)
@@ -129,8 +127,15 @@ const [emailError, setEmailError] = useState("");
                   관리자이십니까?
                 </Link>
               </Grid>
+              <Grid item>
+                <Link to = "/Home" variant = "body2">
+                  테스트용 로그인
+                </Link>
               </Grid>
+              </Grid>
+              
           </Box>
+          
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
